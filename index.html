@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Wyniki</title>
+</head>
+<body>
+    <div id="top-bar">
+        <label for="categories">Wybór kategorii:</label>
+        <select name="categories" id="categories_select">
+            <option value="1" selected>Administracja biurowa</option>
+            <option value="2">Badania i rozwój</option>
+            <option value="3">Bankowość</option>
+            <option value="4">BHP / Ochrona środowiska</option>
+            <option value="5">Budownictwo</option>
+            <option value="6">Call Center</option>
+            <option value="7">Doradztwo / Konsulting</option>
+            <option value="8">Energetyka</option>
+            <option value="9">Edukacja/ Szkolenia</option>
+            <option value="10">Finanse / Ekonomia</option>
+            <option value="11">Franczyza / Własny biznes</option>
+            <option value="12">Hotelarstwo / Gastronomia / Turystyka</option>
+            <option value="13">Human Resources / Zasoby ludzkie</option>
+            <option value="14">Internet / e-Commerce / Nowe media</option>
+            <option value="15">Inżynieria</option>
+            <option value="16">IT - Adminstracja</option>
+            <option value="17">IT - Rozwój oprogramowania</option>
+            <option value="18">Kontrola jakości</option>
+            <option value="19">Łańcuch dostaw</option>
+            <option value="20">Marketing</option>
+            <option value="21">Media / Sztuka / Rozrywka</option>
+            <option value="22">Nieruchomości</option>
+            <option value="23">Obsługa klienta</option>
+            <option value="24">Praca fizyczna</option>
+            <option value="25">Prawo</option>
+            <option value="26">Produkcja</option>
+            <option value="27">Public Relations</option>
+            <option value="28">Reklama / Grafika / Kreacja / Fotografia</option>
+            <option value="29">Sektor publiczny</option>
+            <option value="30">Sprzedaż</option>
+            <option value="31">Transport / Spedycja / Logistyka</option>
+            <option value="32">Ubezpieczenia</option>
+            <option value="33">Zakupy</option>
+            <option value="34">Zdrowie / Uroda / Rekracja</option>
+            <option value="35">Inne</option>
+        </select>
+    </div>
+    <div id="content">
+        <p><b>Tematy</b></p>
+        <div id="text-description">
+            <object id = "text-content" data="LDA_WEB\1.txt"></object>
+        </div>
+        <iframe id="iframe-lda" src="LDA_WEB\1_LDA.html" height = "900" width = "1620" title="Iframe"></iframe>
+        <p><b>Unigramy</b></p>
+        <img id="wordcloud" src="LDA_WEB\1_wordcloud.png" alt="">
+        <p><b>Bigramy</b></p>
+        <img id="wordcloud_bigrams" src="LDA_WEB\1_wordcloud_bigrams.png" alt="">
+        <p><b>Trigramy</b></p>
+        <img id="wordcloud_trigrams" src="LDA_WEB\1_wordcloud_trigrams.png" alt="">
+        <p><b>Częstotliwość występowania tematów w ofertach</b></p>
+        <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">
+    </div>
+</body>
+</html>
