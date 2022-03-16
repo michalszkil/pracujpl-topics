@@ -57,17 +57,32 @@
         <div id="pyldavis-wrapper" style="text-align:center; width: 100%">
             <iframe id="iframe-lda" scrolling="no" style="border:none;" seamless="seamless" src="LDA_WEB\1_LDA.html" title="Iframe"></iframe>
         </div>
+        <label for="categories">Poziom perplexity:</label>
+        <select name="categories-tsne-plot" id="categories-tsne-plot-select">
+            <option value="5" selected>5</option>
+            <option value="30">30</option>
+            <option value="100">100</option>
+        </select>
+        <label for="categories-extended">Opisy wymagań:</label>
+        <select name="categories-tsne-plot-extended" id="categories-tsne-plot-select-extended">
+            <option value="_extended">Tak</option>
+            <option value="" selected>Nie</option>
+        </select>
         <div id="tsne-wrapper" style="text-align:center; width: 100%">
-            <iframe id="tsne-plot" scrolling="no" style="border:none;" seamless="seamless" src ="LDA_WEB\1_tsne_plot.html"></iframe>
+            <iframe id="tsne-plot" scrolling="no" style="border:none;" seamless="seamless" src ="LDA_WEB\1_30_tsne_plot.html"></iframe>
         </div>
+        <p><b>Regresja tematów na płace brutto</b></p>
+        <div id="regression" style="text-align:center; width: 100%">
+            <iframe id="iframe-regression" scrolling="no" style="border:none; height: 700px;" seamless="seamless" src="LDA_WEB\1_regression.html" title="Iframe"></iframe>
+        </div>
+        <p><b>Częstotliwość występowania tematów w ofertach</b></p>
+        <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">
         <p><b>Unigramy</b></p>
         <img id="wordcloud" src="LDA_WEB\1_wordcloud.png" alt="">
         <p><b>Bigramy</b></p>
         <img id="wordcloud_bigrams" src="LDA_WEB\1_wordcloud_bigrams.png" alt="">
         <p><b>Trigramy</b></p>
         <img id="wordcloud_trigrams" src="LDA_WEB\1_wordcloud_trigrams.png" alt="">
-        <p><b>Częstotliwość występowania tematów w ofertach</b></p>
-        <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">
     </div>
 </body>
 </html>

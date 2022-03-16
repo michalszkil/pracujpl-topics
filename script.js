@@ -9,8 +9,27 @@ select.addEventListener('change', function () {
     document.getElementById("wordcloud_bigrams").src="LDA_WEB\\" + target + "_wordcloud_bigrams.png";
     document.getElementById("wordcloud_trigrams").src="LDA_WEB\\" + target + "_wordcloud_trigrams.png";
     document.getElementById("barplot").src="LDA_WEB\\" + target + "_barplot.png";
-
+    document.getElementById("tsne-plot").src="LDA_WEB\\" + target + "_30_tsne_plot.html";
+    tsne_select.value = "30";
+    tsne_select_extended.value = "";
 });
+
+const tsne_select = document.getElementById("categories-tsne-plot-select")
+
+tsne_select.addEventListener('change', function () {
+    let target = this.value;
+    document.getElementById("tsne-plot").src = "LDA_WEB\\" + select.value + "_" + target + "_tsne_plot" + tsne_select_extended.value +".html";
+    console.log("LDA_WEB\\" + select.value + "_" + target + "_tsne_plot.html");
+})
+
+const tsne_select_extended = document.getElementById("categories-tsne-plot-select-extended")
+
+tsne_select_extended.addEventListener('change', function () {
+    let target = this.value;
+    document.getElementById("tsne-plot").src = "LDA_WEB\\" + select.value + "_" + tsne_select.value + "_tsne_plot" + target + ".html";
+    console.log("LDA_WEB\\" + select.value + "_" + tsne_select.value + "_tsne_plot" + target + ".html");
+})
+
 
 let _query = document.getElementById('text-content').innerHTML
 console.log(_query)
