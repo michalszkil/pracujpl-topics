@@ -54,7 +54,12 @@
         <div id="text-description">
             <object id = "text-content" data="LDA_WEB\1.txt"></object>
         </div>
-        <iframe id="iframe-lda" src="LDA_WEB\1_LDA.html" title="Iframe"></iframe>
+        <div id="pyldavis-wrapper" style="text-align:center; width: 100%">
+            <iframe id="iframe-lda" scrolling="no" style="border:none;" seamless="seamless" src="LDA_WEB\1_LDA.html" title="Iframe"></iframe>
+        </div>
+        <div id="tsne-wrapper" style="text-align:center; width: 100%">
+            <iframe id="tsne-plot" scrolling="no" style="border:none;" seamless="seamless" src ="LDA_WEB\1_tsne_plot.html"></iframe>
+        </div>
         <p><b>Unigramy</b></p>
         <img id="wordcloud" src="LDA_WEB\1_wordcloud.png" alt="">
         <p><b>Bigramy</b></p>

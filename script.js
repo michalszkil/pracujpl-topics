@@ -11,3 +11,10 @@ select.addEventListener('change', function () {
     document.getElementById("barplot").src="LDA_WEB\\" + target + "_barplot.png";
 
 });
+
+let _query = document.getElementById('text-content').innerHTML
+console.log(_query)
+
+// document.getElementById('pyldavis-wrapper').style.textAlign = 'center';
+pyldavis_wrapper = document.getElementById('pyldavis-wrapper').style.textAlign = 'center';
+console.log(pyldavis_wrapper.children);
