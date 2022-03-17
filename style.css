@@ -47,9 +47,16 @@ body {
     width : 100%;
 }
 
-#tsne-plot {
+#tsne-wrapper {
     display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+#tsne-plot {
+    /* display: flex;
+    justify-content: center; */
     height : 750px;
     width : 100%;
 }
@@ -61,4 +68,10 @@ img {
 
 #testing {
     font-family: system-ui;
+}
+
+#regressions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }

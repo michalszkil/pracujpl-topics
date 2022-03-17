@@ -68,12 +68,22 @@
             <option value="_extended">Tak</option>
             <option value="" selected>Nie</option>
         </select>
-        <div id="tsne-wrapper" style="text-align:center; width: 100%">
+        <div id="tsne-wrapper">
             <iframe id="tsne-plot" scrolling="no" style="border:none;" seamless="seamless" src ="LDA_WEB\1_30_tsne_plot.html"></iframe>
         </div>
-        <p><b>Regresja tematów na płace brutto</b></p>
-        <div id="regression" style="text-align:center; width: 100%">
-            <iframe id="iframe-regression" scrolling="no" style="border:none; height: 700px;" seamless="seamless" src="LDA_WEB\1_regression.html" title="Iframe"></iframe>
+        <div id="regressions">
+            <div id="regression" style="text-align:center; width: 300px;">
+                <p><b>Regresja liniowa wagi tematów na płace brutto</b></p>
+                <iframe id="iframe-regression" scrolling="no" style="border:none; height: 1000px;" seamless="seamless" src="LDA_WEB\1_regression.html" title="Iframe"></iframe>
+            </div>
+            <div id="dominant-regression" style="text-align:center; width: 300px">
+                <p><b>Regresja liniowa dominujących tematów na płace brutto</b></p>
+                <iframe id="dominant-iframe-regression" scrolling="no" style="border:none; height: 1000px;" seamless="seamless" src="LDA_WEB\1_dominant_topic_regression.html" title="Iframe"></iframe>
+            </div>
+            <div id="quantile-regression" style="text-align:center; width: 700px">
+                <p><b>Regresja kwantylowa wagi tematów na płace brutto</b></p>
+                <iframe id="iframe-quantile-regression" scrolling="no" style="border:none; width: 100%; height: 800px;" seamless="seamless" src="LDA_WEB\1_quantile.html" title="Iframe"></iframe>
+            </div>
         </div>
         <p><b>Częstotliwość występowania tematów w ofertach</b></p>
         <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">

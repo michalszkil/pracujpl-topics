@@ -10,6 +10,9 @@ select.addEventListener('change', function () {
     document.getElementById("wordcloud_trigrams").src="LDA_WEB\\" + target + "_wordcloud_trigrams.png";
     document.getElementById("barplot").src="LDA_WEB\\" + target + "_barplot.png";
     document.getElementById("tsne-plot").src="LDA_WEB\\" + target + "_30_tsne_plot.html";
+    document.getElementById("iframe-regression").src="LDA_WEB\\" + target + "_regression.html";
+    document.getElementById("dominant-iframe-regression").src="LDA_WEB\\" + target + "_dominant_topic_regression.html";
+    document.getElementById("iframe-quantile-regression").src="LDA_WEB\\" + target + "_quantile.html";
     tsne_select.value = "30";
     tsne_select_extended.value = "";
 });
