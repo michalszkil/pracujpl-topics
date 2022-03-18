@@ -13,6 +13,7 @@ select.addEventListener('change', function () {
     document.getElementById("iframe-regression").src="LDA_WEB\\" + target + "_regression.html";
     document.getElementById("dominant-iframe-regression").src="LDA_WEB\\" + target + "_dominant_topic_regression.html";
     document.getElementById("iframe-quantile-regression").src="LDA_WEB\\" + target + "_quantile.html";
+    document.getElementById("histogram-plot").src="LDA_histograms\\" + target + "_histogram.html";
     tsne_select.value = "30";
     tsne_select_extended.value = "";
 });
