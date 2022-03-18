@@ -40,3 +40,5 @@ console.log(_query)
 // document.getElementById('pyldavis-wrapper').style.textAlign = 'center';
 pyldavis_wrapper = document.getElementById('pyldavis-wrapper').style.textAlign = 'center';
 console.log(pyldavis_wrapper.children);
+
+// testing
