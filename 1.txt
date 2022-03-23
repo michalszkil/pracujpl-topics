@@ -1,0 +1,10 @@
+<ol>
+    <li>Praca pod presją, wypełnianie powierzonych zadań, kultura osobista</li>
+    <li>Prawo jazdy kat. b, obsługa komputera, odpowiednie wyszkstałcenie, komunikatywność, współpraca, sumienność</li>
+    <li>Umiejętność realizacji projektów, nastawienie na realizację celów, znajomość Outlooka, Powerpointa, SAP-a</li>
+    <li>Znajomość niemieckiego, umiejętność pracy w zespole, umiejętności interpersonalne</li>
+    <li>Zaangażowanie, dokładność, księgowość</li>
+    <li>Status studenta finansów/rachunkowości/ekonomii, myślenie analityczne</li>
+    <li>Odporność na stres</li>
+    <li>Swobodna komunikacja, wiedza...</li>
+</ol>

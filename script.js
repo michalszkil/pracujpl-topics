@@ -16,6 +16,9 @@ select.addEventListener('change', function () {
     document.getElementById("histogram-plot").src="LDA_histograms\\" + target + "_histogram_custom_bins.html";
     tsne_select.value = "30";
     tsne_select_extended.value = "";
+    // if (target == 1) {
+    //     document.getElementById("topics-description-text").innerHTML = 1.html;
+    // }
 });
 
 const tsne_select = document.getElementById("categories-tsne-plot-select")
@@ -42,8 +45,6 @@ tsne_select_extended.addEventListener('change', function () {
     // console.log("LDA_WEB\\" + select.value + "_" + tsne_select.value + "_tsne_plot" + target + ".html");
 })
 
-
-
 let _query = document.getElementById('text-content').innerHTML
 console.log(_query)
 
@@ -52,3 +53,17 @@ pyldavis_wrapper = document.getElementById('pyldavis-wrapper').style.textAlign =
 console.log(pyldavis_wrapper.children);
 
 // testing
+
+// var client = new XMLHttpRequest();
+// client.open('GET', 'topic_descriptions\\1.txt');
+// client.onreadystatechange = function() {
+//   alert(client.responseText);
+// }
+// client.send();
+// topic_description = client.responseText;
+
+fetch('http://localhost/1.txt')
+  .then(response => response.text())
+  .then((data) => {
+    console.log(data)
+  })
