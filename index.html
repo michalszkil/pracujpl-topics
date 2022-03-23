@@ -96,8 +96,14 @@
                 </div>
             </div>
         </div>
+        <p><b>Histogram średnich wynagrodzeń brutto</b></p>
+        <label for="histogram-bins">Skala:</label>
+        <select name="histogram-bins-plot" id="histogram-bins-plot-select">
+            <option value="_custom_bins" selected>Dostosowana</option>
+            <option value="">Normalna</option>
+        </select>
         <div id="histogram-wrapper">
-            <iframe id="histogram-plot" scrolling="no" style="border:none; min-height: 800px; min-width: 100vh;" seamless="seamless" src ="LDA_histograms\1_histogram.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe id="histogram-plot" scrolling="no" style="border:none; min-height: 800px; min-width: 100vh;" seamless="seamless" src ="LDA_histograms\1_histogram_custom_bins.html" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
         </div>
         <p><b>Częstotliwość występowania tematów w ofertach</b></p>
         <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">
