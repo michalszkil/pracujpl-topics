@@ -62,7 +62,7 @@
         <div id="pyldavis-wrapper" style="text-align:center;">
             <iframe id="iframe-lda" scrolling="no" style="border:none; min-width: 1500px;" seamless="seamless" src="LDA_WEB\1_LDA.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" title="Iframe"></iframe>
         </div>
-        <p><b>Tematy dominujące w ofertach pracy</b></p>
+        <p><b>Tematy dominujące w ofertach pracy rozmieszczone przez T-SNE na tematach z LDA</b></p>
         <label for="categories">Poziom perplexity:</label>
         <select name="categories-tsne-plot" id="categories-tsne-plot-select">
             <option value="5" selected>5</option>
@@ -76,6 +76,21 @@
         </select>
         <div id="tsne-wrapper" style="text-align:center;">
             <iframe id="tsne-plot" scrolling="no" style="border:none; min-width: 100vh;" seamless="seamless" src ="LDA_WEB\1_30_tsne_plot.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" ></iframe>
+        </div>
+        <p><b>Tematy dominujące w ofertach pracy rozmieszczone przez T-SNE na tematach uzyskanych z SVD</b></p>
+        <label for="categories">Poziom perplexity:</label>
+        <select name="categories-tsne-svd-plot" id="categories-tsne-svd-plot-select">
+            <option value="5" selected>5</option>
+            <option value="30">30</option>
+            <option value="100">100</option>
+        </select>
+        <label for="categories-svd-extended">Opisy wymagań:</label>
+        <select name="categories-tsne-svd-plot-extended" id="categories-tsne-svd-plot-select-extended">
+            <option value="_extended">Tak</option>
+            <option value="" selected>Nie</option>
+        </select>
+        <div id="tsne-svd-wrapper" style="text-align:center;">
+            <iframe id="tsne-svd-plot" scrolling="no" style="border:none; min-width: 100vh;" seamless="seamless" src ="LDA_WEB\1_30_tsne_svd_plot.html" frameborder="0" scrolling="no" onload="resizeIframe(this)" ></iframe>
         </div>
         <div id="regressions" style="text-align:center;">
             <div id="dominant-regression" style="text-align:center; width: 300px">
@@ -108,11 +123,11 @@
         <p><b>Częstotliwość występowania tematów w ofertach</b></p>
         <img id="barplot" src="LDA_WEB\1_barplot.png" alt="">
         <p><b>Unigramy</b></p>
-        <img id="wordcloud" src="LDA_WEB\1_wordcloud.png" alt="">
+        <img id="wordcloud" src="wordclouds\1_wordcloud.png" alt="">
         <p><b>Bigramy</b></p>
-        <img id="wordcloud_bigrams" src="LDA_WEB\1_wordcloud_bigrams.png" alt="">
+        <img id="wordcloud_bigrams" src="wordclouds\1_wordcloud_bigrams.png" alt="">
         <p><b>Trigramy</b></p>
-        <img id="wordcloud_trigrams" src="LDA_WEB\1_wordcloud_trigrams.png" alt="">
+        <img id="wordcloud_trigrams" src="wordclouds\1_wordcloud_trigrams.png" alt="">
     </div>
 </body>
 </html>
